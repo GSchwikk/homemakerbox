@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag @builder.image_url %>
+
 <p>
   <strong>Name:</strong>
   <%= @builder.name %>
@@ -19,6 +21,8 @@
   <strong>Website:</strong>
   <%= @builder.website %>
 </p>
+
+
 
 <%= link_to 'Edit', edit_builder_path(@builder) , class: "btn btn-link"%> |
 <%= link_to 'Back', builders_path , class: "btn btn-link"%>
